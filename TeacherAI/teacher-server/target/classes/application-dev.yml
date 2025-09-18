@@ -1,0 +1,13 @@
+teacher:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    host: localhost
+    port: 3306
+    database: teacher-ai
+    username: root
+    password: 2003831sdl
+  #阿里云配置
+  alioss:
+    endpoint: https://oss-cn-beijing.aliyuncs.com
+    bucket-name: java-aitwo
+    region: cn-beijing

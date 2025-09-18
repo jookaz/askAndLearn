@@ -1,0 +1,78 @@
+server:
+  port: 8080
+  tomcat:
+    connection-timeout: 300000  # 5分钟
+  servlet:
+    read-timeout: 600000        # 10分钟
+
+spring:
+  profiles:
+    active: dev
+  main:
+    allow-circular-references: true
+#    设置文件上传大小
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 5MB
+#    为什么不能使用durid
+  datasource:
+    driver-class-name: ${teacher.datasource.driver-class-name}
+    url: jdbc:mysql://${teacher.datasource.host}:${teacher.datasource.port}/${teacher.datasource.database}?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+    username: ${teacher.datasource.username}
+    password: ${teacher.datasource.password}
+  ai:
+    openai:
+      base-url: https://dashscope.aliyuncs.com/compatible-mode
+      #      api-key: ${OPENAI_API_KEY}
+      #TODO 我感觉这里应该要把api-key隐藏起来
+      api-key: sk-030224f6d26447d5afce59f82de0269e
+      chat:
+        options:
+          model: deepseek-v3
+#      embedding:
+#        options:
+#          model: text-embedding-v3
+#          dimensions: 1024
+mybatis-plus:
+  #mapper配置文件
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.xiaoshao.entity
+  configuration:
+    #开启驼峰命名
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      id-type: auto
+mpp:
+  entityBasePath: com.xiaoshao.entity  # 替换为你的实体类包名
+#日志输出级别
+logging:
+  level:
+    com:
+      xiaoshao:
+        mapper: debug
+        service: info
+        controller: info
+#        暂时不需要日记功能
+#    org.springframework.ai: debug
+teacher:
+  jwt:
+    # 设置jwt签名加密时使用的秘钥
+    student-secret-key: IULOVE
+    # 设置jwt过期时间
+    student-ttl: 86400000
+    # 设置前端传递过来的令牌名称
+    student-token-name: student-token
+    teacher-secret-key: LOVEIU
+    teacher-ttl: 86400000
+    teacher-token-name: teacher-token
+    admin-secret-key: ILOVEYOU
+    admin-ttl: 86400000
+    admin-token-name: admin-token
+  #阿里云配置
+  alioss:
+    endpoint: ${teacher.alioss.endpoint}
+    bucket-name: ${teacher.alioss.bucket-name}
+    region: ${teacher.alioss.region}
+

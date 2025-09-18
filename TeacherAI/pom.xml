@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.2.8</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.xiaoshao</groupId>
+    <artifactId>TeacherAI</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>TeacherAI</name>
+    <description>TeacherAI</description>
+    <modules>
+        <module>teacher-common</module>
+        <module>teacher-pojo</module>
+        <module>teacher-server</module>
+    </modules>
+    <properties>
+        <java.version>17</java.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <lombok.version>1.18.34</lombok.version>
+        <jjwt-api.version>0.9.1</jjwt-api.version>
+        <mybatis-plus.version>3.5.7</mybatis-plus.version>
+        <druid>1.2.1</druid>
+        <spring-boot.version>3.4.4</spring-boot.version>
+        <mysql.version>8.0.30</mysql.version>
+        <aliyun.sdk.oss>3.17.4</aliyun.sdk.oss>
+        <aspectj>1.9.4</aspectj>
+        <knife4j>4.1.0</knife4j>
+        <fastjson>1.2.76</fastjson>
+        <jaxb-api>2.3.1</jaxb-api>
+        <spring-doc>2.3.0</spring-doc>
+        <knife4j-openapi3>4.5.0</knife4j-openapi3>
+        <spring-ai.version>1.0.0-M6</spring-ai.version>
+        <mybatisplus-plus-version>1.7.5-RELEASE</mybatisplus-plus-version>
+    </properties>
+    <!--统一管理依赖版本-->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.ai</groupId>
+                <artifactId>spring-ai-bom</artifactId>
+                <version>${spring-ai.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+<!--            由于关于springAI的相关依赖已经使用了bom进行管理了，所以不需要再有下面的依赖-->
+<!--            &lt;!&ndash;            springAI框架&ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>org.springframework.ai</groupId>-->
+<!--                <artifactId>spring-ai-openai-spring-boot-starter</artifactId>-->
+<!--            </dependency>-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+            <!--JWT令牌-->
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt</artifactId>
+                <version>${jjwt-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-spring-boot3-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+<!--            使用mybatis-plus的插件，完成联合主键的使用-->
+            <dependency>
+                <groupId>com.github.jeffreyning</groupId>
+                <artifactId>mybatisplus-plus</artifactId>
+                <version>${mybatisplus-plus-version}</version>
+            </dependency>
+            <!-- MySQL 驱动 -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid}</version>
+            </dependency>
+<!--            阿里云-->
+            <dependency>
+                <groupId>com.aliyun.oss</groupId>
+                <artifactId>aliyun-sdk-oss</artifactId>
+                <version>${aliyun.sdk.oss}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjrt</artifactId>
+                <version>${aspectj}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjweaver</artifactId>
+                <version>${aspectj}</version>
+            </dependency>
+<!--            文档依赖-->
+<!--            <dependency>-->
+<!--                <groupId>com.github.xiaoymin</groupId>-->
+<!--                <artifactId>knife4j</artifactId>-->
+<!--                <version>3.0.2</version> &lt;!&ndash; 确保版本≥4.0 &ndash;&gt;-->
+<!--            </dependency>-->
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
+                <version>${knife4j-openapi3}</version>
+            </dependency>
+            <!--            java对象和json数据之间的转换依赖-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson}</version>
+            </dependency>
+<!--             Java 对象与 XML 数据之间自动映射的 Java API 和工具集-->
+            <dependency>
+                <groupId>javax.xml.bind</groupId>
+                <artifactId>jaxb-api</artifactId>
+                <version>${jaxb-api}</version>
+            </dependency>
+
+
+
+        </dependencies>
+    </dependencyManagement>
+
+</project>
