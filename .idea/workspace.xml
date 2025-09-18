@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a6240064-3267-46b6-af84-bb6d1ccf4613" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/12程序目录.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/constant/JwtClaimsConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/constant/JwtClaimsConstant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/constant/MessageConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/constant/MessageConstant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/constant/SystemConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/constant/SystemConstants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/constant/SystemModelNameConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/constant/SystemModelNameConstant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/context/BaseContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/context/BaseContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/enumeration/OperationType.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/enumeration/OperationType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/exception/AccountNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/exception/AccountNotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/exception/BaseException.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/exception/BaseException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/exception/BusinessException.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/exception/BusinessException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/exception/DeletionNotAllowedException.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/exception/DeletionNotAllowedException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/exception/LoginFailedException.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/exception/LoginFailedException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/exception/ModelConnectException.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/exception/ModelConnectException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/exception/PasswordEditFailedException.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/exception/PasswordEditFailedException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/exception/PasswordErrorException.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/exception/PasswordErrorException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/exception/RegisterException.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/exception/RegisterException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/exception/UserNotLoginException.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/exception/UserNotLoginException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/json/JacksonObjectMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/json/JacksonObjectMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/properties/AliOssProperties.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/properties/AliOssProperties.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/properties/JwtProperties.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/properties/JwtProperties.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/query/PageQuery.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/query/PageQuery.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/result/PageResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/result/PageResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/result/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/result/Result.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/utils/AliOssUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/utils/AliOssUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/utils/BeanCopyUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/utils/BeanCopyUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/utils/JwtUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-common/target/classes/com/xiaoshao/utils/JwtUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-common/target/test-classes/com/xiaoshao/TeacherCommonApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/AdminLoginDTO$AdminLoginDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/AdminLoginDTO$AdminLoginDTOBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/AdminLoginDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/AdminLoginDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/AiModelConfigDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/AiModelConfigDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/ArchiveAnswersDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/ArchiveAnswersDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/ArchiveQuestionsDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/ArchiveQuestionsDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/AskModelDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/AskModelDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/ChapterDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/ChapterDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/CourseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/CourseDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/ModelsAnswerDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/ModelsAnswerDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/PromptTemplateDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/PromptTemplateDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/QuestionDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/QuestionDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/StudentAnswerAllDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/StudentAnswerAllDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/StudentAnswerDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/StudentAnswerDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/StudentChapterWenxueValueDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/StudentChapterWenxueValueDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/StudentDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/StudentDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/StudentImproveAnswerDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/StudentImproveAnswerDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/StudentLoginDTO$StudentLoginDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/StudentLoginDTO$StudentLoginDTOBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/StudentLoginDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/StudentLoginDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/TeacherDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/TeacherDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/TeacherLoginDTO$TeacherLoginDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/TeacherLoginDTO$TeacherLoginDTOBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/TeacherLoginDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/TeacherLoginDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/UserChapterProgressDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/dto/UserChapterProgressDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/AiModelConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/AiModelConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/ArchiveAnswers.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/ArchiveAnswers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/ArchiveQuestions.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/ArchiveQuestions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/Chapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/Chapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/Course.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/ModelAnswer.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/ModelAnswer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/PromptTemplate.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/PromptTemplate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/Question.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/StudentAnswer.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/StudentAnswer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/StudentAnswerAll.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/StudentAnswerAll.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/StudentChapterWenxueValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/StudentChapterWenxueValue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/StudentCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/StudentCheck.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/StudentCourseRelation.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/StudentCourseRelation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/StudentImproveAnswer.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/StudentImproveAnswer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/Teacher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/TeacherCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/TeacherCheck.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/UserChapterProgress.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/entity/UserChapterProgress.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/AdminLoginVO$AdminLoginVOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/AdminLoginVO$AdminLoginVOBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/AdminLoginVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/AdminLoginVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/AiModelConfigVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/AiModelConfigVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/ArchiveAnswersVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/ArchiveAnswersVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/ArchiveQuestionsVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/ArchiveQuestionsVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/ChapterVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/ChapterVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/CourseVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/CourseVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/MessageVO$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/MessageVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/MessageVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/ModelQuestionResponseVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/ModelQuestionResponseVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/ModelsAnswerResponseVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/ModelsAnswerResponseVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/PromptTemplateVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/PromptTemplateVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/QuestionVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/QuestionVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/StudentAnswerAllVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/StudentAnswerAllVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/StudentAnswerResponseVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/StudentAnswerResponseVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/StudentChapterWenxueValueVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/StudentChapterWenxueValueVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/StudentCourseRelationVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/StudentCourseRelationVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/StudentLoginVO$StudentLoginVOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/StudentLoginVO$StudentLoginVOBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/StudentLoginVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/StudentLoginVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/TeacherLoginVO$TeacherLoginVOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/TeacherLoginVO$TeacherLoginVOBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/TeacherLoginVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/TeacherLoginVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/TeacherSelectVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/TeacherSelectVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/UserChapterProgressVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-pojo/target/classes/com/xiaoshao/vo/UserChapterProgressVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/TeacherServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/TeacherServerApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/config/CommonConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/config/CommonConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/config/MvcConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/config/MvcConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/config/MyBatisPlusConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/config/MyBatisPlusConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/config/OpenApiConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/config/OpenApiConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/config/OssConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/config/OssConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/config/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/config/WebMvcConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/admin/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/admin/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/admin/ModelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/admin/ModelController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/admin/PromptTemplateController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/admin/PromptTemplateController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/student/ArchiveController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/student/ArchiveController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/student/AskYouController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/student/AskYouController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/student/ChapterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/student/ChapterController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/student/ChatHistoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/student/ChatHistoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/student/CourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/student/CourseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/student/ModelsAnswerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/student/ModelsAnswerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/student/QuestionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/student/QuestionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/student/SomeoneAskYouController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/student/SomeoneAskYouController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/student/StudentAnswerAllController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/student/StudentAnswerAllController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/student/StudentAnswerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/student/StudentAnswerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/student/StudentChapterWenxueValueController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/student/StudentChapterWenxueValueController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/student/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/student/StudentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/student/StudentImproveAnswerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/student/StudentImproveAnswerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/student/UserChapterProgressController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/student/UserChapterProgressController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/teacher/ArchiveAnswersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/teacher/ArchiveAnswersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/teacher/ArchiveQuestionsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/teacher/ArchiveQuestionsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/teacher/ChapterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/teacher/ChapterController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/teacher/CommonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/teacher/CommonController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/teacher/CourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/teacher/CourseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/teacher/ModelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/teacher/ModelController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/teacher/QuestionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/teacher/QuestionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/teacher/StudentCourseRelationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/teacher/StudentCourseRelationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/teacher/TeacherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/controller/teacher/TeacherController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/factory/ModelFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/factory/ModelFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/handler/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/handler/GlobalExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/handler/MyMetaObjectHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/handler/MyMetaObjectHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/interceptor/JwtTokenAdminInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/interceptor/JwtTokenAdminInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/interceptor/JwtTokenStudentInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/interceptor/JwtTokenStudentInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/interceptor/JwtTokenTeacherInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/interceptor/JwtTokenTeacherInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/AdminMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/AdminMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/AiModelConfigMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/AiModelConfigMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/ArchiveAnswersMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/ArchiveAnswersMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/ArchiveQuestionsMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/ArchiveQuestionsMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/ChapterMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/ChapterMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/CourseMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/CourseMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/ModelAnswerMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/ModelAnswerMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/PromptTemplateMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/PromptTemplateMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/QuestionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/QuestionMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/StudentAnswerAllMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/StudentAnswerAllMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/StudentAnswerMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/StudentAnswerMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/StudentChapterWenxueValueMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/StudentChapterWenxueValueMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/StudentCheckMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/StudentCheckMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/StudentCourseRelationMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/StudentCourseRelationMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/StudentImproveAnswerMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/StudentImproveAnswerMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/StudentMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/StudentMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/TeacherCheckMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/TeacherCheckMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/TeacherMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/TeacherMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/UserChapterProgressMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/mapper/UserChapterProgressMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/modelname/SystemModelName.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/modelname/SystemModelName.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/prompt/SystemPrompt.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/prompt/SystemPrompt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/repository/ChatHistoryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/repository/ChatHistoryRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/repository/InMemoryChatHistoryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/repository/InMemoryChatHistoryRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/AskYouService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/AskYouService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/IAdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/IAdminService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/IAiModelConfigService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/IAiModelConfigService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/IArchiveAnswersService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/IArchiveAnswersService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/IArchiveQuestionsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/IArchiveQuestionsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/IChapterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/IChapterService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/ICourseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/ICourseService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/IModelAnswerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/IModelAnswerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/IPromptTemplateService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/IPromptTemplateService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/IQuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/IQuestionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/IStudentAnswerAllService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/IStudentAnswerAllService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/IStudentAnswerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/IStudentAnswerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/IStudentChapterWenxueValueService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/IStudentChapterWenxueValueService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/IStudentCheckService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/IStudentCheckService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/IStudentCourseRelationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/IStudentCourseRelationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/IStudentImproveAnswerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/IStudentImproveAnswerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/IStudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/IStudentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/ITeacherCheckService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/ITeacherCheckService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/ITeacherService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/ITeacherService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/IUserChapterProgressService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/IUserChapterProgressService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/AdminServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/AiModelConfigServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/AiModelConfigServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/ArchiveAnswersServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/ArchiveAnswersServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/ArchiveQuestionsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/ArchiveQuestionsServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/AskYouServiceImpl$CourseChapterNames.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/AskYouServiceImpl$CourseChapterNames.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/AskYouServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/AskYouServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/ChapterServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/ChapterServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/CourseServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/CourseServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/ModelAnswerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/ModelAnswerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/PromptTemplateServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/PromptTemplateServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/QuestionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/QuestionServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/StudentAnswerAllServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/StudentAnswerAllServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/StudentAnswerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/StudentAnswerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/StudentChapterWenxueValueServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/StudentChapterWenxueValueServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/StudentCheckServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/StudentCheckServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/StudentCourseRelationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/StudentCourseRelationServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/StudentImproveAnswerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/StudentImproveAnswerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/StudentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/StudentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/TeacherCheckServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/TeacherCheckServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/TeacherServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/TeacherServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/UserChapterProgressServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/service/impl/UserChapterProgressServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/tools/ModelsAnswerTools.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/tools/ModelsAnswerTools.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/tools/QuestionTools.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/tools/QuestionTools.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/tools/StudentAnswerTools.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/tools/StudentAnswerTools.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/tools/StudentImproveAnswerTools.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/classes/com/xiaoshao/tools/StudentImproveAnswerTools.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherAI/teacher-server/target/test-classes/com/xiaoshao/TeacherServerApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherAI/teacher-server/target/test-classes/com/xiaoshao/TeacherServerApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher-ai.sql" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jookaz&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jookaz/askAndLearn.git&quot;,
+    &quot;accountId&quot;: &quot;f36fddf6-efd2-43cd-a8a9-5cbe083d01de&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="安全分析" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="32r4Er92rMjz0kq1eYN6o2vfvei" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.TeacherServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/20935/Desktop/刻盘归档_邵德力_软件213_ 202111050688_基于生成式人工智能的智慧问学系统的设计与实现/12程序目录&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;F:\\IDEA\\IntelliJ IDEA 2024.3.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="TeacherServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="teacher-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xiaoshao.TeacherServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.25659.39" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.25659.39" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="a6240064-3267-46b6-af84-bb6d1ccf4613" name="更改" comment="" />
+      <created>1758165248637</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1758165248637</updated>
+      <workItem from="1758165249775" duration="1632000" />
+      <workItem from="1758166925463" duration="691000" />
+      <workItem from="1758168547736" duration="20000" />
+      <workItem from="1758168587117" duration="14000" />
+      <workItem from="1758168616631" duration="107000" />
+    </task>
+    <task id="LOCAL-00001" summary="入库">
+      <option name="closed" value="true" />
+      <created>1758167042721</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1758167042721</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="入库" />
+    <option name="LAST_COMMIT_MESSAGE" value="入库" />
+  </component>
+</project>
