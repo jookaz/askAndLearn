@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能导师</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        
+        .description {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        
+        .chat-container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            height: 500px;
+            overflow-y: auto;
+            margin-bottom: 20px;
+        }
+        
+        .message {
+            margin-bottom: 15px;
+            max-width: 80%;
+        }
+        
+        .user-message {
+            margin-left: auto;
+            background-color: #e6f7ff;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        
+        .bot-message {
+            margin-right: auto;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        
+        .message-time {
+            color: #999;
+            font-size: 0.8em;
+            margin: 5px 0;
+        }
+        
+        .user-message .message-time {
+            text-align: right;
+        }
+        
+        .bot-message .message-time {
+            text-align: left;
+        }
+        
+        .input-area {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        #messageInput {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        
+        .setup-panel {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: none;
+        }
+        
+        .setup-panel input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        .info-display {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+        
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <h1>智能导师</h1>
+    <div class="description">
+        智能导师会自动引导您完成解答,请输入问题点击发送开始问答,请在一次引导结束之后再开始新的问题,或者点击重新开始可直接开始新的问题。您可以尝试输入“问题”开始模拟引导。
+    </div>
+    
+    <div class="chat-container" id="chatbot">
+        </div>
+    
+    <div class="input-area">
+        <input type="text" id="messageInput" placeholder="输入消息" autocomplete="off">
+        <button id="submitBtn">发送</button>
+        <button id="setupBtn">设置学生信息</button>
+        <button id="clearBtn">重新开始</button>
+    </div>
+    
+    <div class="setup-panel" id="setupPanel">
+        <input type="text" id="nameInput" placeholder="请输入姓名">
+        <input type="text" id="idInput" placeholder="请输入学号">
+        <button id="saveBtn">保存信息</button>
+        <div class="info-display" id="infoDisplay"></div>
+    </div>
+    
+    <script>
+        // 配置信息 (与之前保持一致)
+        const API_KEY = "pat_lpKE2elEXgbGc71iEQ9sJOmF9OqJBmeELDp0QhoSc6fHpoc39atnrH2qkhCRu0Ki";
+        const USER_ID = "123123";
+        const API_URL = "https://api.coze.cn/v3/chat";
+        
+        const BOT_IDS = {
+            "答案": "7503868231036305418",
+            "分解": "7503913230805893171",
+            "判断": "7503917220863639561",
+            "总结": "7503921360411099162"
+        };
+        
+        // 预设问答（已更新为AI问题模拟过程）
+        const presetGuideSteps = {
+    0: { // 初始阶段：触发 RAG 引导
+        match: ["什么是检索增强生成", "检索增强生成", "RAG", "什么是RAG"],
+        response: "检索增强生成（RAG）是一个当前热门的AI概念。你有没有过这样的经历：想写一篇关于某个新概念的报告，但手头的资料不够全面，或者担心AI生成的回复有偏差？RAG就是为了解决这类问题而生的。我们可以把它想象成一个聪明的学生，你觉得它需要具备哪些“聪明”的能力才能写好报告呢？",
+        nextStep: 1, // 进入下一步
+        resetOnEnd: false,
+        isTrigger: true // 标记为触发预设引导的步骤
+    },
+    1: { // 引导用户思考“检索”的能力
+        match: ["资料", "查找", "搜索", "检索", "信息", "数据", "知识库", "学习", "书本"],
+        response: "没错，首先它需要懂查找资料。就像我们写报告前会去图书馆、查阅论文一样，RAG的第一步就是从一个庞大的“知识库”里找到与问题最相关的信息片段。你觉得，一个学生从图书馆里查找到资料后，会再做些什么？",
+        nextStep: 2,
+        resetOnEnd: false,
+        fallbackResponse: "嗯，这是一个好问题。但我们现在在讨论RAG。你能试着思考一下，一个学生在写报告前，最先要做的“聪明”事是什么呢？比如，他会怎么处理他所不了解的知识？" // 当用户不匹配时，留在当前步骤，并给出引导提示
+    },
+    2: { // 引导用户思考“生成”的能力，并结合检索到的信息
+        match: ["整理", "组织", "归纳", "写", "表达", "总结", "生成", "回答", "大模型", "LLM"],
+        response: "你说的很对！找到资料后，学生并不会直接复制粘贴，而是会整理、归纳，用自己的话把报告写出来。RAG也是一样，它会将检索到的相关信息作为“参考资料”，然后交给一个强大的“大脑”（也就大型语言模型）去生成最终的回答。你觉得这样做，相比于直接让LLM凭空想象答案，有什么好处呢？",
+        nextStep: 3,
+        resetOnEnd: false,
+        fallbackResponse: "嗯，思考得不错。但是找到资料后，学生还要做的重要一步是什么？比如，他怎样把这些资料变成一份完整的报告呢？"
+    },
+    3: { // 引导用户思考 RAG 的优势
+        match: ["准确", "可靠", "真实", "减少幻觉", "引用", "最新", "全面", "可追溯", "不乱说"],
+        response: "非常棒的洞察！通过这种方式，RAG能让LLM的回答变得更准确、更可靠，因为它有了事实依据。同时，它还能提供最新的信息，避免LLM“胡说八道”（专业术语叫“幻觉”），并且回答有据可查。你觉得这种方法可以在哪些场景下发挥巨大作用呢？比如，在公司里有哪些地方能用到它？",
+        nextStep: 4,
+        resetOnEnd: false,
+        fallbackResponse: "你提到了AI的一些特点。不过，结合我们刚才说的“查找资料”和“整理生成”，你觉得RAG能带来哪些具体的好处呢？"
+    },
+    4: { // 引导用户思考 RAG 的应用场景，并进行总结
+        match: ["客服", "问答", "知识库", "企业", "搜索", "助手", "学习"],
+        response: "你举的例子很贴切！在企业内部知识问答、智能客服、专业领域内容生成等方面，RAG都大有可为。简单来说，RAG就是给AI一个“会查资料的大脑”，让它在回答问题时既能发挥创造力，又能基于事实。你对RAG的基本原理和应用场景现在有更清晰的认识了吗？",
+        nextStep: 5, // 引导到结束总结
+        resetOnEnd: false,
+        fallbackResponse: "结合RAG能提供准确和最新信息的特点，你觉得在实际工作中，哪些地方会特别需要这种能力呢？"
+    },
+    5: { // 最终总结或结束引导
+        match: ["是", "有", "清晰", "明白", "懂了", "可以", "总结", "结束", "好了", "完成"],
+        response: "太好了！很高兴你对检索增强生成有了初步的理解。RAG确实是提升大模型实用性的一个重要方向。如果你还有其他问题，或者想了解其他AI概念，随时可以提问。",
+        nextStep: 0, // 预设引导结束，回到初始状态
+        resetOnEnd: true // 结束时重置主会话上下文
+    }
+};
+
+        // 应用状态
+        const state = {
+            qaContext: {
+                question: "",
+                standard_answer: "",
+                guidance_process: [],
+                current_step: 0,
+                max_steps: 7
+            },
+            studentInfo: {
+                name: "",
+                student_id: ""
+            },
+            isProcessing: false,
+            currentPresetStep: 0,  // 添加这行
+            inPresetGuide: false   // 添加这行表示是否在预设流程中
+        };
+        
+        // DOM元素
+        const chatbot = document.getElementById('chatbot');
+        const messageInput = document.getElementById('messageInput');
+        const submitBtn = document.getElementById('submitBtn');
+        const setupBtn = document.getElementById('setupBtn');
+        const clearBtn = document.getElementById('clearBtn');
+        const setupPanel = document.getElementById('setupPanel');
+        const nameInput = document.getElementById('nameInput');
+        const idInput = document.getElementById('idInput');
+        const saveBtn = document.getElementById('saveBtn');
+        const infoDisplay = document.getElementById('infoDisplay');
+        
+        // 格式化时间
+        function formatTime(date) {
+            return date.toLocaleString('zh-CN', {
+                year: 'numeric',
+                month: '2-digit',
+                day: '2-digit',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            });
+        }
+        
+        // 添加带时间的消息
+        function addMessage(content, isUser = true) {
+            const now = new Date();
+            const timeString = formatTime(now);
+            
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${isUser ? 'user-message' : 'bot-message'}`;
+            
+            const timeDiv = document.createElement('div');
+            timeDiv.className = 'message-time';
+            timeDiv.textContent = timeString;
+            
+            const contentDiv = document.createElement('div');
+            contentDiv.textContent = content;
+            
+            messageDiv.appendChild(timeDiv);
+            messageDiv.appendChild(contentDiv);
+            
+            chatbot.appendChild(messageDiv);
+            chatbot.scrollTop = chatbot.scrollHeight;
+        }
+        
+        // 重置上下文
+        function resetContext() {
+            state.qaContext = {
+                question: "",
+                standard_answer: "",
+                guidance_process: [],
+                current_step: 0,
+                max_steps: 7
+            };
+            // 新增：重置预设状态
+        state.currentPresetStep = 0;
+        state.inPresetGuide = false;
+        }
+        
+        // 调用API (此函数逻辑保持不变，因为延迟在sendMessage中处理)
+        async function callBot(botType, message) {
+            console.log(botType,`[API调用] 使用${botType}Bot处理消息: ${message}`);
+            
+            const bot_id = BOT_IDS[botType];
+            
+            const headers = {
+                "Authorization": `Bearer ${API_KEY}`,
+                "Content-Type": "application/json"
+            };
+            
+            const payload = {
+                "bot_id": bot_id,
+                "user_id": USER_ID,
+                "stream": false,
+                "auto_save_history": true,
+                "additional_messages": [{
+                    "role": "user",
+                    "content": message,
+                    "content_type": "text"
+                }]
+            };
+            
+            try {
+                // 显示加载状态 (此处仍需要，因为此函数本身会进行API调用)
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<span class="loading"></span> 处理中...';
+                
+                const response = await fetch(API_URL, {
+                    method: 'POST',
+                    headers: headers,
+                    body: JSON.stringify(payload)
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP错误! 状态: ${response.status}`);
+                }
+                
+                const result = await response.json();
+                console.log(botType,'[API响应] 初始响应:', result);
+                
+                if (result.code !== 0) {
+                    throw new Error(`API错误: ${result.msg || '未知错误'}`);
+                }
+                
+                const conversation_id = result.data.conversation_id;
+                const chat_id = result.data.id;
+                console.log(`获取到会话ID: ${conversation_id}, 聊天ID: ${chat_id}`);
+                
+                // 轮询获取结果
+                console.log(botType,'[API轮询] 开始轮询结果...');
+                let statusData;
+                do {
+                    await new Promise(resolve => setTimeout(resolve, 1000));
+                    const retrieveUrl = `${API_URL}/retrieve?conversation_id=${conversation_id}&chat_id=${chat_id}`;
+                    const statusResponse = await fetch(retrieveUrl, { headers });
+                    statusData = await statusResponse.json();
+                    console.log('轮询状态:', statusData.data.status);
+                } while (statusData.data.status !== 'completed');
+                
+                // 获取最终消息
+                const messageUrl = `${API_URL}/message/list?chat_id=${chat_id}&conversation_id=${conversation_id}`;
+                const msgResponse = await fetch(messageUrl, { headers });
+                const msgData = await msgResponse.json();
+                console.log(botType,'[API响应] 最终消息数据:', msgData);
+                
+                // 提取智能体回复
+                const botResponses = msgData.data
+                    .filter(m => m.type === "tool_response" && m.role === "assistant")
+                    .map(m => m.content);
+                
+                const resultq = botResponses.join("\n\n") || "未收到有效回复";
+                console.log(botType,'[API结果] 最终响应内容:', resultq);
+                return resultq;
+                
+            } catch (error) {
+                console.error('[API错误]', error);
+                return `请求出错: ${error.message}`;
+            } finally {
+                // 恢复按钮状态
+                submitBtn.disabled = false;
+                submitBtn.textContent = '发送';
+            }
+        }
+        
+        // 处理发送消息
+        async function sendMessage() {
+            if (state.isProcessing) return;
+            
+            const message = messageInput.value.trim();
+            if (!message) return;
+            
+            state.isProcessing = true;
+            addMessage(message, true); // 先显示用户消息
+            messageInput.value = ''; // 清空输入框
+
+                    // --- 预设引导逻辑 ---
+            let handledByPreset = false;
+            let botResponse = '';
+
+// 1. 检查当前是否在预设流程中
+if (state.inPresetGuide) {
+    const currentStep = presetGuideSteps[state.currentPresetStep];
+    if (!currentStep) {
+        // 如果步骤无效，重置状态
+        state.inPresetGuide = false;
+        state.currentPresetStep = 0;
+    } else {
+        // 检查用户输入是否匹配当前步骤的关键词
+        const lowerMessage = message.toLowerCase();
+        const matchedKeyword = currentStep.match.find(keyword => 
+            lowerMessage.includes(keyword.toLowerCase())
+        );
+
+        if (matchedKeyword) {
+            // 匹配成功，进入下一步
+            botResponse = currentStep.response;
+            state.currentPresetStep = currentStep.nextStep;
+            
+            // 检查是否需要结束引导
+            if (currentStep.resetOnEnd) {
+                state.inPresetGuide = false;
+                state.currentPresetStep = 0;
+                resetContext();
+            }
+        } else {
+            // 不匹配，使用 fallback 响应（保持在当前步骤）
+            botResponse = currentStep.fallbackResponse || 
+                "我不太明白你的意思，我们当前正在讨论RAG。你能试着从我刚才的问题中寻找线索吗？";
+        }
+        handledByPreset = true;
+    }
+} 
+// 2. 不在预设流程中，检查是否应该触发
+else if (state.currentPresetStep === 0) {
+    const triggerStep = presetGuideSteps[0];
+    const lowerMessage = message.toLowerCase();
+    if (triggerStep.match.some(keyword => 
+        lowerMessage.includes(keyword.toLowerCase())
+    )) {
+        // 触发预设引导
+        botResponse = triggerStep.response;
+        state.currentPresetStep = triggerStep.nextStep;
+        state.inPresetGuide = true;
+        handledByPreset = true;
+    }
+}
+
+// 如果消息被预设引导处理了
+if (handledByPreset) {
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span class="loading"></span> 思考中...';
+    
+    // 模拟思考延迟
+    const delay = Math.floor(Math.random() * 2001) + 4000;
+    await new Promise(resolve => setTimeout(resolve, delay));
+    
+    addMessage(botResponse, false);
+    
+    submitBtn.disabled = false;
+    submitBtn.textContent = '发送';
+    state.isProcessing = false;
+    return; // 重要：结束函数执行，避免进入API调用流程
+}
+// --- 预设引导逻辑结束 ---
+
+
+            console.log(`[当前轮次] ${state.qaContext.current_step + 1}/${state.qaContext.max_steps}`);
+            
+            try {
+                // 第一阶段：获取问题和标准答案
+                if (state.qaContext.current_step === 0) {
+                    state.qaContext.question = message;
+                    state.qaContext.standard_answer = await callBot("答案", `问题：${message}`);
+                    
+                    const nextQuestion = await callBot("分解", 
+                        `原始问题：${state.qaContext.question}\n标准答案：${state.qaContext.standard_answer}`
+                    );
+                    
+                    state.qaContext.guidance_process.push(["系统提问", nextQuestion]);
+                    state.qaContext.current_step += 1;
+                    
+                    addMessage(nextQuestion, false);
+                    return;
+                }
+                
+                // 中间阶段：处理用户回答
+                if (state.qaContext.current_step < state.qaContext.max_steps) {
+                    state.qaContext.guidance_process.push(["用户回答", message]);
+                    
+                    const judgment = await callBot("判断", 
+                        `原始问题：${state.qaContext.question}\n` +
+                        `标准答案：${state.qaContext.standard_answer}\n` +
+                        `当前引导过程：${JSON.stringify(state.qaContext.guidance_process)}`
+                    );
+                    
+                    if (judgment.trim() === "1") { 
+                        const finalAnswer = await callBot("总结",
+                            `原始问题：${state.qaContext.question}\n` +
+                            `标准答案：${state.qaContext.standard_answer}\n` +
+                            `引导过程：${JSON.stringify(state.qaContext.guidance_process)}`
+                        );
+                    
+                        addMessage(finalAnswer, false);
+                        resetContext();
+                    } else {
+                        const nextQuestion = await callBot("分解",
+                            `原始问题：${state.qaContext.question}\n` +
+                            `标准答案：${state.qaContext.standard_answer}\n` +
+                            `当前引导过程：${JSON.stringify(state.qaContext.guidance_process)}`
+                        );
+                        
+                        state.qaContext.guidance_process.push(["系统提问", nextQuestion]);
+                        state.qaContext.current_step += 1;
+                        
+                        addMessage(nextQuestion, false);
+                    }
+                    return;
+                }
+                
+                // 最后阶段：生成最终答案
+                const finalAnswer = await callBot("总结",
+                    `原始问题：${state.qaContext.question}\n` +
+                    `标准答案：${state.qaContext.standard_answer}\n` +
+                    `引导过程：${JSON.stringify(state.qaContext.guidance_process)}`
+                );
+                
+                addMessage(finalAnswer, false);
+                resetContext();
+                
+            } catch (error) {
+                console.error('处理消息时出错:', error);
+                addMessage(`处理消息时出错: ${error.message}`, false);
+            } finally {
+                // 如果是从API调用返回，这里会恢复按钮状态
+                // 对于预设问答，按钮状态在预设逻辑块内处理
+                if (state.isProcessing) { // 只有当处理状态仍为真时才恢复，避免冲突
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = '发送';
+                }
+                state.isProcessing = false;
+            }
+        }
+        
+        // 设置学生信息 (保持不变)
+        function setStudentInfo() {
+            const name = nameInput.value.trim();
+            const studentId = idInput.value.trim();
+            
+            if (name && studentId) {
+                state.studentInfo.name = name;
+                state.studentInfo.student_id = studentId;
+                
+                infoDisplay.textContent = `已保存: 姓名-${name} 学号-${studentId}`;
+                setupPanel.style.display = 'none';
+                
+                console.log('学生信息已更新:', state.studentInfo);
+            }
+        }
+        
+        // 清空对话 (保持不变)
+        function clearConversation() {
+            chatbot.innerHTML = '';
+            resetContext();
+            console.log('对话已重置');
+        }
+        
+        // 事件监听 (保持不变)
+        submitBtn.addEventListener('click', sendMessage);
+        messageInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') sendMessage();
+        });
+        
+        setupBtn.addEventListener('click', () => {
+            setupPanel.style.display = 'block';
+        });
+        
+        saveBtn.addEventListener('click', setStudentInfo);
+        clearBtn.addEventListener('click', clearConversation);
+    </script>
+</body>
+</html>
