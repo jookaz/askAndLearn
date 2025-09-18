@@ -1,0 +1,23 @@
+# IDE
+.idea/
+*.iml
+
+# Node frontend build outputs
+teacher-vue/teacher-ai/node_modules/
+teacher-vue/teacher-ai/dist*/
+
+# Maven build outputs
+**/target/
+*.jar
+
+# Logs
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Temporary
+*.tmp
+*.swp
+
